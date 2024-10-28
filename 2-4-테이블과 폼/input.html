@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="#">
+        <input type="text" placeholder="이름을 입력하세요." disabled>
+        <br>
+
+        <input type="password">
+        <br>
+
+        <input type="email" value="abc">
+        <br>
+
+        <input type="email">
+        <br>
+
+        취미:
+        <label>
+            <input type="checkbox" name="hobby"> 운동 
+        </label>
+        <label>
+            <input type="checkbox" name="hobby"> 명상
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" checked> 숨쉬기
+        </label>
+        <br>
+
+        약관 동의:
+        <label>
+            <input type="radio" name="agreement" checked> 예
+        </label>
+        <label>
+            <input type="radio" name="agreement"> 아니오
+        </label>    
+        <br>
+
+        <input type="number" value="0" max="5" min="0">
+        <br>
+
+        <input type="range" value="3" max="5" min="1">
+        <br>
+
+        <input type="file" multiple accept="image/*">
+        <br>
+
+        <textarea rows="5" cols="10"></textarea>
+        <br>
+
+        <select>
+            <option>아메리카노</option>
+            <option disabled>카페라떼</option>
+            <option selected>카푸치노</option>
+        </select>
+        <br>
+
+
+        <button type="button">버튼</button>
+        <!-- 타입을 생략하면 서브밋이 기본 -->
+        <button type="submit">전송</button>
+        <button type="reset">초기화</button>
+        
+        <input type="button" value="버튼2">
+        <!-- 인풋 타입 버튼은 안 쓰는 걸 권고-->
+         
+
+        
+    </form>
+</body>
+</html>
+
+<!-- 
+*name 그룹화
+약관동의 예이면서 아니오일 수 없음 
+->그룹화해줘야 함
+->name 으로 그룹화 해주면 됨 -->
